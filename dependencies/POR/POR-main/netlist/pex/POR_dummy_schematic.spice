@@ -1,0 +1,3 @@
+.subckt POR VDD VSS
+.ends
+.end

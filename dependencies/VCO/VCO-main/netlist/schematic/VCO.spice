@@ -1,0 +1,38 @@
+** sch_path: /foss/designs/clock_final_2.sch
+.subckt clock_final_2 Vdd Vcon Vss Vout
+*.PININFO Vdd:B Vcon:B Vss:B Vout:B
+M2 net1 Vcon Vss n_bulk sg13_lv_nmos w=1.5u l=9u ng=1 m=1
+M3 net10 net1 Vdd p_bulk sg13_lv_pmos w=3u l=9u ng=1 m=1
+M4 net3 net2 net10 p_bulk sg13_lv_pmos w=3u l=9u ng=1 m=1
+M5 net3 net2 net5 n_bulk sg13_lv_nmos w=1.5u l=9u ng=1 m=1
+M6 net5 Vcon Vss n_bulk sg13_lv_nmos w=1.5u l=9u ng=1 m=1
+M7 net11 net1 Vdd p_bulk sg13_lv_pmos w=3u l=9u ng=1 m=1
+M8 net4 net3 net11 p_bulk sg13_lv_pmos w=3u l=9u ng=1 m=1
+M9 net4 net3 net8 n_bulk sg13_lv_nmos w=1.5u l=9u ng=1 m=1
+M10 net8 Vcon Vss n_bulk sg13_lv_nmos w=1.5u l=9u ng=1 m=1
+M11 net6 net1 Vdd p_bulk sg13_lv_pmos w=3u l=9u ng=1 m=1
+M12 net2 net4 net6 p_bulk sg13_lv_pmos w=3u l=9u ng=1 m=1
+M13 net2 net4 net7 n_bulk sg13_lv_nmos w=1.5u l=9u ng=1 m=1
+M14 net7 Vcon Vss n_bulk sg13_lv_nmos w=1.5u l=9u ng=1 m=1
+M1 Vdd net1 net1 p_bulk sg13_lv_pmos w=3u l=9u ng=1 m=1
+M24 Vout net9 Vss n_bulk sg13_lv_nmos w=1.5u l=0.13u ng=1 m=1
+M25 net9 net2 Vdd p_bulk sg13_lv_pmos w=3.2u l=0.13u ng=1 m=1
+M26 net9 net2 Vss n_bulk sg13_lv_nmos w=1.5u l=0.13u ng=1 m=1
+M15 Vout net9 Vdd p_bulk sg13_lv_pmos w=3.2u l=0.13u ng=1 m=1
+R1 Vss n_bulk ptap1 A=8.34e-12 P=5.56e-05
+R13 Vdd p_bulk ntap1 A=6.84e-12 P=4.56e-05
+R2 Vss n_bulk ptap1 A=8.34e-12 P=5.56e-05
+R3 Vss n_bulk ptap1 A=8.34e-12 P=5.56e-05
+R5 Vss n_bulk ptap1 A=8.34e-12 P=5.56e-05
+R6 Vss n_bulk ptap1 A=8.34e-12 P=5.56e-05
+R14 Vss n_bulk ptap1 A=8.34e-12 P=5.56e-05
+R15 Vss n_bulk ptap1 A=8.34e-12 P=5.56e-05
+R16 Vss n_bulk ptap1 A=4.14e-12 P=2.76e-05
+R4 Vdd p_bulk ntap1 A=1.104e-11 P=7.36e-05
+R7 Vdd p_bulk ntap1 A=1.104e-11 P=7.36e-05
+R8 Vdd p_bulk ntap1 A=1.104e-11 P=7.36e-05
+R9 Vdd p_bulk ntap1 A=1.104e-11 P=7.36e-05
+R10 Vdd p_bulk ntap1 A=1.104e-11 P=7.36e-05
+R11 Vdd p_bulk ntap1 A=1.104e-11 P=7.36e-05
+R12 Vdd p_bulk ntap1 A=1.104e-11 P=7.36e-05
+.ends

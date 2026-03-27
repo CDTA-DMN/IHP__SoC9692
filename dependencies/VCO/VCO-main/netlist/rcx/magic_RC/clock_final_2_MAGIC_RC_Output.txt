@@ -1,0 +1,54 @@
+
+Magic 8.3 revision 582 - Compiled on Sun Dec 21 08:00:31 PM CET 2025.
+Starting magic under Tcl interpreter
+Using the terminal as the console.
+Using NULL graphics device.
+Processing system .magicrc file
+Switching to WIRING tool.
+Switching to NETLIST tool.
+Switching to PICK tool.
+Switching to BOX tool.
+Sourcing design .magicrc for technology ihp-sg13g2 ...
+2 Magic internal units = 1 Lambda
+Input style sg13g2(): scaleFactor=2, multiplier=2
+The following types are not handled by extraction and will be treated as non-electrical types:
+    fillfet sealcont difffill nemitter hvnemitter hvisodiffres sealvia1 sealvia2 sealvia3 sealvia4 sealvia5 sealvia6 pad seal thruvia 
+Scaled tech values by 2 / 1 to match internal grid scaling
+Loading "output/clock_final_2__clock_final_2/magic_RC/clock_final_2_MAGIC_RC_Script.tcl" from command line.
+Warning: Calma reading is not undoable!  I hope that's OK.
+Library written using GDS-II Release 6.0
+Library name: LIB
+Reading "$$$CONTEXT_INFO$$$".
+Reading "guard_ring$12".
+Reading "pmos$1".
+Reading "nmos$1".
+Reading "pmos".
+Reading "nmos".
+Reading "pmos$3".
+Reading "guard_ring$1".
+Reading "guard_ring".
+Reading "guard_ring$2".
+Reading "via_stack$1".
+Reading "via_stack".
+Reading "via_stack$3".
+Reading "clock_final_2".
+Extracting clock_final_2 into /foss/designs/output/clock_final_2__clock_final_2/magic_RC/clock_final_2.ext:
+exttosim finished.
+Port: name = Vcon exists, forcing drivepoint
+Location is (-5340, 7005); drivepoint (-5341, 7005)
+Port: name = Vdd exists, forcing drivepoint
+Location is (5156, 10219); drivepoint (5156, 10219)
+Port: name = Vout exists, forcing drivepoint
+Location is (5075, 8866); drivepoint (5075, 8866)
+Port: name = Vss exists, forcing drivepoint
+Location is (3900, 7148); drivepoint (3900, 7148)
+Adding  Vcon; Tnew = 0.07ns, Told = 0.00ns
+Adding  a_n3854_7419#; Tnew = 0.35ns, Told = 0.00ns
+Adding  a_n3786_7383#; Tnew = 0.13ns, Told = 0.00ns
+Adding  a_n1109_7383#; Tnew = 0.13ns, Told = 0.00ns
+Adding  Vdd; Tnew = 0.20ns, Told = 0.00ns
+Adding  a_n4994_7898#; Tnew = 0.57ns, Told = 0.00ns
+Total Nets: 27
+Nets extracted: 15 (0.555556)
+Nets output: 15 (0.555556)
+exttospice finished.

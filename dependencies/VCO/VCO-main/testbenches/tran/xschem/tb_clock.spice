@@ -1,0 +1,70 @@
+** sch_path: /foss/designs/tb_clock.sch
+**.subckt tb_clock
+VDD VDD GND 1.2
+Vcon Vcon GND 0.5
+x1 VDD VOUT Vcon GND clock_final_2_gds
+**** begin user architecture code
+
+
+** IHP models
+.lib cornerMOSlv.lib mos_tt
+.lib cornerMOShv.lib mos_tt
+
+
+
+
+.include /foss/designs/clock_final_2_gds.spice
+.control
+.temp 27
+save all
+tran 1n 6uu
+meas tran t_rise1 when v(vout)=0.6 rise=0
+meas tran t_fall1 when v(vout)=0.6 fall=0
+meas tran t_rise2 when v(vout)=0.6 rise=1
+let t_on = t_fall1-t_rise1
+let t_off = t_rise2-t_fall1
+let period = (t_rise2-t_rise1)
+let frequency = 1/period
+let duty_cycle = (t_on/period)*100
+print period duty_cycle frequency
+plot VOUT
+plot i(vmeas11)
+.endc
+
+
+**** end user architecture code
+**.ends
+
+* expanding   symbol:  clock_final_2_gds.sym # of pins=4
+** sym_path: /foss/designs/clock_final_2_gds.sym
+** sch_path: /foss/designs/clock_final_2_gds.sch
+.subckt clock_final_2_gds VDD VOUT Vcon GND
+*.ipin Vcon
+*.iopin VDD
+*.iopin GND
+*.opin VOUT
+XM2 net1 Vcon net2 net2 sg13_lv_nmos w=1.5u l=9u ng=1
+XM3 net7 net1 VDD VDD sg13_lv_pmos w=3u l=9u ng=1
+XM4 net4 net3 net7 VDD sg13_lv_pmos w=3u l=9u ng=1
+XM5 net4 net3 net6 net2 sg13_lv_nmos w=1.5u l=9u ng=1
+XM6 net6 Vcon net2 net2 sg13_lv_nmos w=1.5u l=9u ng=1
+XM7 net8 net1 VDD VDD sg13_lv_pmos w=3u l=9u ng=1
+XM8 net5 net4 net8 VDD sg13_lv_pmos w=3u l=9u ng=1
+XM9 net5 net4 net11 net2 sg13_lv_nmos w=1.5u l=9u ng=1
+XM10 net11 Vcon net2 net2 sg13_lv_nmos w=1.5u l=9u ng=1
+XM11 net9 net1 VDD VDD sg13_lv_pmos w=3u l=9u ng=1
+XM12 net3 net5 net9 VDD sg13_lv_pmos w=3u l=9u ng=1
+XM13 net3 net5 net10 net2 sg13_lv_nmos w=1.5u l=9u ng=1
+XM14 net10 Vcon net2 net2 sg13_lv_nmos w=1.5u l=9u ng=1
+XM1 VDD net1 net1 VDD sg13_lv_pmos w=3u l=9u ng=1
+Vmeas11 net2 GND 0
+.save i(vmeas11)
+XM24 VOUT net12 GND GND sg13_lv_nmos w=1.5u l=0.13u ng=1
+XM25 net12 net3 VDD VDD sg13_lv_pmos w=3.2u l=0.13u ng=1
+XM26 net12 net3 GND GND sg13_lv_nmos w=1.5u l=0.13u ng=1
+XM15 VOUT net12 VDD VDD sg13_lv_pmos w=3.2u l=0.13u ng=1
+.ends
+
+.GLOBAL VDD
+.GLOBAL GND
+.end

@@ -1,0 +1,15 @@
+26-Mar-2026 17:59:00 | INFO    | KLayout version detected: 0.30.6
+26-Mar-2026 17:59:00 | INFO    | Using DRC JSON file: /foss/pdks/ihp-sg13g2/libs.tech/klayout/python/sg13g2_pycell_lib/sg13g2_tech_mod.json
+26-Mar-2026 17:59:00 | INFO    | Running IHP-SG13G2 main checks on design /foss/designs/POR.gds, topcell: POR
+26-Mar-2026 17:59:09 | INFO    | Running IHP-SG13G2 antenna checks on design /foss/designs/POR.gds, topcell: POR
+27-Mar-2026 03:01:21 | INFO    | Completed running Antenna checks.
+27-Mar-2026 03:01:21 | INFO    | Running IHP-SG13G2 density checks on design /foss/designs/POR.gds, topcell: POR
+27-Mar-2026 03:01:29 | INFO    | Completed running Density checks.
+27-Mar-2026 03:01:29 | INFO    | Running IHP-SG13G2 sg13g2_maximal checks on design /foss/designs/POR.gds, topcell: POR
+27-Mar-2026 03:02:19 | INFO    | Completed running Sg13g2_maximal checks.
+27-Mar-2026 03:02:19 | ERROR   | ==================================================================================
+27-Mar-2026 03:02:19 | ERROR   | ❌ --- KLayout DRC Check Failed: Violations were detected in the layout. --- ❌
+27-Mar-2026 03:02:19 | ERROR   | ==================================================================================
+27-Mar-2026 03:02:19 | ERROR   | Violated rules are : {'M4.j', 'M5.k', 'M1.j', 'GFil.g', 'M3Fil.h', 'TM2.c', 'M2.j', 'M4Fil.h', 'AFil.g', 'AFil.g2', 'M1Fil.h', 'M2Fil.h', 'M3.j'}
+
+27-Mar-2026 03:02:19 | INFO    | Total DRC Run time: 32600.14 seconds (including execution, analysis, and reporting)

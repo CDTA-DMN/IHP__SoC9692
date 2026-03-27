@@ -1,0 +1,115 @@
+
+Magic 8.3 revision 603 - Compiled on Sat Feb 14 01:20:09 AM CET 2026.
+Starting magic under Tcl interpreter
+Using the terminal as the console.
+WARNING: RLIMIT_NOFILE is above 1024 and Tcl_Version<9 this may cause runtime issues [rlim_cur=1048576]
+Using NULL graphics device.
+Processing system .magicrc file
+Switching to WIRING tool.
+Switching to NETLIST tool.
+Switching to PICK tool.
+Switching to BOX tool.
+Sourcing design .magicrc for technology ihp-sg13g2 ...
+2 Magic internal units = 1 Lambda
+Input style sg13g2(): scaleFactor=2, multiplier=2
+The following types are not handled by extraction and will be treated as non-electrical types:
+    pblock sealcont difffill nemitter hvnemitter hvisodiffres sealvia1 sealvia2 sealvia3 sealvia4 sealvia5 sealvia6 pillar solder seal glass thruvia inductor 
+Scaled tech values by 2 / 1 to match internal grid scaling
+Loading ihp-sg13g2 Device Generator Menu ...
+Loading "output/POR__POR/magic_RC/POR_MAGIC_RC_Script.tcl" from command line.
+Warning: Calma reading is not undoable!  I hope that's OK.
+Library written using GDS-II Release 6.0
+Library name: LIB
+Reading "$$$CONTEXT_INFO$$$".
+Reading "via_stack$40".
+Reading "via_stack$35".
+Reading "via_stack$33".
+Reading "via_stack$32".
+Reading "via_stack$30".
+Reading "via_stack$29".
+Reading "guard_ring$16".
+Reading "guard_ring$18".
+Reading "rhigh$1".
+Reading "rhigh".
+Reading "cmim".
+Reading "guard_ring$15".
+Reading "guard_ring$12".
+Reading "guard_ring$21".
+Reading "via_stack$28".
+Reading "via_stack$27".
+Reading "via_stack$25".
+Reading "via_stack$24".
+Reading "guard_ring".
+Reading "via_stack$6".
+Reading "via_stack$4".
+Reading "guard_ring$8".
+Reading "via_stack".
+Reading "via_stack$2".
+Reading "via_stack$1".
+Reading "pmos$4".
+Reading "nmos$5".
+Reading "pmos".
+Reading "nmos".
+Reading "nmos$1".
+Reading "nmos$2".
+Reading "pmos$2".
+Reading "rppd".
+Reading "cmim$1".
+Reading "pmos$3".
+Reading "nmos$3".
+Reading "via_stack$19".
+Reading "guard_ring$17".
+Reading "via_stack$23".
+Reading "via_stack$21".
+Reading "via_stack$9".
+Reading "guard_ring$20".
+Reading "via_stack$12".
+Reading "via_stack$14".
+Reading "via_stack$15".
+Reading "rhigh$2".
+Reading "via_stack$16".
+Reading "via_stack$36".
+Reading "via_stack$37".
+Reading "via_stack$39".
+Reading "POR".
+Extracting POR into /foss/designs/simulations/POR/output/POR__POR/magic_RC/POR.ext:
+POR: 10 warnings
+Total of 10 warnings.
+exttosim finished.
+Adding  a_63070_1752#
+Adding  a_63070_n5420#
+Adding  a_63206_n5420#
+Adding  a_63349_1752#
+Adding  a_63349_n5420#
+Adding  a_63489_n5420#
+Adding  a_63629_1752#
+Adding  a_63629_n5420#
+Adding  a_64034_n1694#
+Adding  a_64174_1752#
+Adding  a_64841_n448#
+Adding  a_64851_n1595#
+Adding  a_63770_n5134#
+Adding  a_65812_n248#
+Adding  a_66395_n630#
+Adding  a_66531_1256#
+Adding  a_64887_n1663#; Tnew = 0.00ns, Told = -539.48ns
+Adding  a_64034_n1920#
+Adding  a_64034_n5392#
+Adding  a_63070_n12306#
+Adding  a_63206_n12306#
+Adding  a_63489_n12306#
+Adding  a_64174_n5392#
+Adding  a_64174_n8960#
+Adding  a_65785_n2363#
+Adding  a_64868_n3050#
+Adding  a_64314_n5392#
+Adding  a_64314_n8960#
+Adding  a_64174_n12406#
+Adding  VSS
+Adding  VLDO; Tnew = 0.07ns, Told = 0.00ns
+Adding  VBGR; Tnew = 0.01ns, Told = 0.00ns
+Adding  RESET; Tnew = 0.09ns, Told = 0.00ns
+Total Nets: 58
+Nets extracted: 33 (0.568965)
+Nets output: 33 (0.568965)
+exttospice finished.

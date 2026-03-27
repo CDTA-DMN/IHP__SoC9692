@@ -1,0 +1,31 @@
+* SPICE3 file created from clock_final_2.ext - technology: ihp-sg13g2
+
+X0 a_5129_2648# m2_1201_210# m2_8750_987# Vss sg13_lv_nmos ad=0.51p pd=3.68u as=0.51p ps=3.68u w=1.5u l=9u
+X1 Vout a_9965_2685# Vss Vss sg13_lv_nmos ad=0.51p pd=3.68u as=0.51p ps=3.68u w=1.5u l=0.13u
+X2 Vss Vcon m2_6082_986# Vss sg13_lv_nmos ad=88.94057p pd=0.40308m as=0.50902p ps=6.845u w=1.5u l=9u
+X3 a_9965_2685# m2_1201_210# Vss Vss sg13_lv_nmos ad=1.11082p pd=14.845u as=0 ps=0 w=1.5u l=0.13u
+X4 Vss Vcon m2_8750_987# Vss sg13_lv_nmos ad=0 pd=0 as=0.50902p ps=6.845u w=1.5u l=9u
+X5 m2_549_2048# Vcon Vss Vss sg13_lv_nmos ad=0.99262p pd=13.845u as=0 ps=0 w=1.5u l=9u
+X6 a_2449_2649# a_5129_2648# m2_6082_986# Vss sg13_lv_nmos ad=0.87807p pd=11.895u as=0 ps=0 w=1.5u l=9u
+X7 Vss Vcon m2_3405_986# Vss sg13_lv_nmos ad=0 pd=0 as=0.50902p ps=6.845u w=1.5u l=9u
+X8 m2_1201_210# a_2449_2649# m2_3405_986# Vss sg13_lv_nmos ad=0.99262p pd=13.845u as=0 ps=0 w=1.5u l=9u
+X9 m2_549_2048# m2_549_2048# Vdd Vdd sg13_lv_pmos ad=1.02p pd=6.68u as=1.02p ps=6.68u w=3u l=9u
+X10 Vdd m2_549_2048# m2_8752_3273# Vdd sg13_lv_pmos ad=0.10835n pd=0.50854m as=0.98902p ps=12.845u w=3u l=9u
+X11 m2_8752_3273# m2_1201_210# a_5129_2648# Vdd sg13_lv_pmos ad=1.02p pd=6.68u as=1.02p ps=6.68u w=3u l=9u
+X12 Vdd m2_549_2048# m2_3405_3275# Vdd sg13_lv_pmos ad=0 pd=0 as=0.98902p ps=12.845u w=3u l=9u
+X13 a_9965_2685# m2_1201_210# Vdd Vdd sg13_lv_pmos ad=1.088p pd=7.08u as=1.088p ps=7.08u w=3.2u l=0.13u
+X14 m2_6082_3274# a_5129_2648# a_2449_2649# Vdd sg13_lv_pmos ad=0.99628p pd=12.895u as=0 ps=0 w=3u l=9u
+X15 Vdd m2_549_2048# m2_6082_3274# Vdd sg13_lv_pmos ad=0 pd=0 as=0 ps=0 w=3u l=9u
+X16 Vout a_9965_2685# Vdd Vdd sg13_lv_pmos ad=1.04023p pd=13.485u as=0 ps=0 w=3.2u l=0.13u
+X17 m2_3405_3275# a_2449_2649# m2_1201_210# Vdd sg13_lv_pmos ad=0 pd=0 as=0 ps=0 w=3u l=9u
+C0 Vcon m2_1201_210# 2.62153f
+C1 Vdd m2_549_2048# 17.18005f
+C2 Vdd a_2449_2649# 4.23042f
+C3 Vdd a_5129_2648# 4.23041f
+C4 Vcon Vss 2.76844f
+C5 Vdd m2_1201_210# 4.54092f
+C6 m2_1201_210# 0 6.21057f **FLOATING
+C7 m2_549_2048# 0 4.22247f **FLOATING
+C8 a_2449_2649# 0 3.45132f **FLOATING
+C9 Vcon 0 11.43616f
+C10 a_5129_2648# 0 3.43915f **FLOATING

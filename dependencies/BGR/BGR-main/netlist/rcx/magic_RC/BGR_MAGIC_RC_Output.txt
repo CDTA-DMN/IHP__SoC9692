@@ -1,0 +1,99 @@
+
+Magic 8.3 revision 603 - Compiled on Sat Feb 14 01:20:09 AM CET 2026.
+Starting magic under Tcl interpreter
+Using the terminal as the console.
+WARNING: RLIMIT_NOFILE is above 1024 and Tcl_Version<9 this may cause runtime issues [rlim_cur=1048576]
+Using NULL graphics device.
+Processing system .magicrc file
+Switching to WIRING tool.
+Switching to NETLIST tool.
+Switching to PICK tool.
+Switching to BOX tool.
+Sourcing design .magicrc for technology ihp-sg13g2 ...
+2 Magic internal units = 1 Lambda
+Input style sg13g2(): scaleFactor=2, multiplier=2
+The following types are not handled by extraction and will be treated as non-electrical types:
+    pblock sealcont difffill nemitter hvnemitter hvisodiffres sealvia1 sealvia2 sealvia3 sealvia4 sealvia5 sealvia6 pillar solder seal glass thruvia inductor 
+Scaled tech values by 2 / 1 to match internal grid scaling
+Loading ihp-sg13g2 Device Generator Menu ...
+Loading "output/BGR__BGR/magic_RC/BGR_MAGIC_RC_Script.tcl" from command line.
+Warning: Calma reading is not undoable!  I hope that's OK.
+Library written using GDS-II Release 6.0
+Library name: LIB
+Reading "$$$CONTEXT_INFO$$$".
+Reading "guard_ring$2".
+Reading "via_stack$7".
+Reading "via_stack$3".
+Reading "via_stack$6".
+Reading "via_stack$5".
+Reading "guard_ring$9".
+Reading "via_stack".
+Reading "via_stack$1".
+Reading "guard_ring".
+Reading "rppd$1".
+Reading "rppd".
+Reading "nmosHV$1".
+Reading "nmosHV".
+Reading "pmosHV".
+Reading "guard_ring$1".
+Reading "pmosHV$2".
+Reading "guard_ring$3".
+Reading "via_stack$2".
+Reading "via_stack$4".
+Reading "via_stack$9".
+Reading "via_stack$10".
+Reading "via_stack$8".
+Reading "via_stack$12".
+Reading "BGR".
+Making label "DA" on type metal3 in cell BGR sticky.
+Making label "DC" on type metal3 in cell BGR sticky.
+Making label "DB" on type metal3 in cell BGR sticky.
+Extracting BGR into /foss/designs/simulations/BGR/output/BGR__BGR/magic_RC/BGR.ext:
+BGR: 8 warnings
+Total of 8 warnings.
+exttosim finished.
+Adding  a_16783_4377#; Tnew = 0.00ns, Told = -484.17ns
+Adding  a_17030_5142#
+Adding  a_16747_4177#
+Adding  a_16929_2002#
+Adding  a_16615_839#
+Adding  a_16965_2312#
+Adding  a_16929_2380#
+Adding  a_19533_2506#; Tnew = 0.00ns, Told = -165.08ns
+Adding  a_21295_5586#; Tnew = 0.00ns, Told = -90.76ns
+Adding  a_21733_2506#; Tnew = 0.00ns, Told = -96.02ns
+Adding  a_22173_5586#; Tnew = 0.00ns, Told = -90.95ns
+Adding  a_22613_2506#; Tnew = 0.00ns, Told = -135.96ns
+Adding  a_23053_5586#; Tnew = 0.00ns, Told = -90.95ns
+Adding  a_23493_2506#; Tnew = 0.00ns, Told = -150.85ns
+Adding  a_23933_5586#; Tnew = 0.00ns, Told = -90.95ns
+Adding  a_24373_2506#; Tnew = 0.00ns, Told = -150.84ns
+Adding  a_24813_5586#; Tnew = 0.00ns, Told = -90.95ns
+Adding  a_25253_2506#; Tnew = 0.00ns, Told = -152.24ns
+Adding  a_25693_5586#; Tnew = 0.00ns, Told = -90.95ns
+Adding  a_26133_2506#; Tnew = 0.00ns, Told = -150.84ns
+Adding  a_26573_5586#; Tnew = 0.00ns, Told = -90.95ns
+Adding  a_27013_2506#; Tnew = 0.00ns, Told = -150.84ns
+Adding  a_27453_5586#; Tnew = 0.00ns, Told = -90.95ns
+Adding  a_27893_2506#; Tnew = 0.00ns, Told = -150.84ns
+Adding  a_28333_5586#; Tnew = 0.00ns, Told = -69.15ns
+Adding  a_22924_1909#; Tnew = 0.00ns, Told = -734.92ns
+Adding  a_16615_n2241#
+Adding  a_22383_1593#; Tnew = 0.00ns, Told = -76.65ns
+Adding  a_26004_1909#; Tnew = 0.00ns, Told = -77.97ns
+Adding  a_29110_1469#; Tnew = 0.00ns, Told = -54.67ns
+Adding  a_26004_1469#; Tnew = 0.00ns, Told = -74.69ns
+Adding  a_29154_399#; Tnew = 0.00ns, Told = -70.87ns
+Adding  a_16615_n41#; Tnew = 0.00ns, Told = -93.39ns
+Adding  a_29154_n481#; Tnew = 0.00ns, Told = -90.99ns
+Adding  a_16615_n921#; Tnew = 0.00ns, Told = -91.18ns
+Adding  a_29154_n1361#; Tnew = 0.00ns, Told = -90.95ns
+Adding  a_16615_n1801#; Tnew = 0.00ns, Told = -92.25ns
+Adding  a_29154_n2241#; Tnew = 0.00ns, Told = -69.15ns
+Adding  GND
+Adding  VDD; Tnew = 0.03ns, Told = 0.00ns
+Adding  VREF; Tnew = 0.00ns, Told = 0.00ns
+Total Nets: 78
+Nets extracted: 41 (0.525641)
+Nets output: 41 (0.525641)
+exttospice finished.

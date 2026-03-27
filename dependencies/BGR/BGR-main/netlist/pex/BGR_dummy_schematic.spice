@@ -1,0 +1,3 @@
+.subckt BGR VDD VSS
+.ends
+.end
