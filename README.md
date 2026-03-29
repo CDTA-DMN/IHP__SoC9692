@@ -6,7 +6,7 @@ Single-technology IP library.
 - dependencies/ : sub-cells and blocks
 - release/v.1.0.0 : immutable versioned deliveries
 
-# RFID4410
+# SoC9692
 ![Chip](doc/fig/full_chip.jpg)
 
 
