@@ -7,7 +7,7 @@ Single-technology IP library.
 - release/v.1.0.0 : immutable versioned deliveries
 
 # SoC9692
-![Chip](doc/full_chip.jpg)
+![Chip](doc/full_chip.png)
 
 
 
