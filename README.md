@@ -7,7 +7,7 @@ Single-technology IP library.
 - release/v.1.0.0 : immutable versioned deliveries
 
 # SoC9692
-![Chip](doc/full_chip.jpg)
+![Chip](doc/full_chip.png)
 
 
 
@@ -16,7 +16,7 @@ Single-technology IP library.
 | **Category** | Mixed-Signal SoC |
 | **Technology** | IHP SG13G2 |
 | **Top Cell** | `SoC9692` |
-| **Die Size** | 0.94 mm × 1.04 mm |
+| **Die Size** | 1 mm × 1 mm |
 | **License** | Apache-2.0 |
 
 ---
